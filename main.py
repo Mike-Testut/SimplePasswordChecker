@@ -27,3 +27,15 @@ while True:
             result += 1
             break
 
+    match result:
+        case 0 | 1:
+            print("Weak Password. Try again")
+            result = 0
+        case 2:
+            print("Medium Password. Try again")
+            result = 0
+        case 3:
+            print("Strong Password.")
+            break
+        case _ :
+            print("error")
