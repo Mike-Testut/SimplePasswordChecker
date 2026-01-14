@@ -9,3 +9,9 @@ while True:
     if len(password) >= 8:
         result += 1
 
+ # Check for number
+    for character in password:
+        if character.isdigit():
+            result += 1
+            break
+
