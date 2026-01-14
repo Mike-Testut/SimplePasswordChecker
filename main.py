@@ -15,3 +15,15 @@ while True:
             result += 1
             break
 
+    # Check for upper and lowercase letters
+    lower = False
+    upper = False
+    for character in password:
+        if character.isalpha() and character.islower():
+            lower = True
+        if character.isalpha() and character.isupper():
+            upper = True
+        if lower == True and upper == True:
+            result += 1
+            break
+
